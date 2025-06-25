@@ -6,7 +6,7 @@ async function checkPremium() {
   const users = await response.json();
 
   if (users[username]) {
-    responseBox.innerText = `You have Premium! Send this code to the bot: ${users[username]}`;
+    responseBox.innerText = `You have Premium! ${users[username]}`;
   } else {
     responseBox.innerText = 'You do not have Premium access to the EAE Bot.';
   }
